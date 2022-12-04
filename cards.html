@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- style css -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Card Page</title>
+</head>
+
+<body>
+    <!-- navbar start-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark shadow">
+        <div class="container-fluid ">
+            <!-- offcanvas trigger start-->
+            <a class="navbar-toggler" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </a>
+            <!-- offcanvas trigger end-->
+            <a class="navbar-brand   d-flex justify-content-center align-items-center " href="index.html">
+                <button class="btn me-2  p-2 fw-bold btn-primary rounded-circle">A-Z</button>
+                <span class="fw-bold">Rahaman</span>
+            </a>
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <form class="d-flex ms-auto  ">
+                    <div class="input-group my-3 my-lg-0">
+                        <input type="text" class="form-control px-md-5" placeholder="Search..."
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn  btn-primary" type="button" id="button-addon2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </form>
+                <ul class="navbar-nav mx-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-user"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end mt-2" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- offsanvas start -->
+    <div class="offcanvas offcanvas-start bg-dark text-white shadow sidebar-nav" tabindex="-1" id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body py-0">
+            <nav class="navbar-dark">
+                <ul class="navbar-nav">
+                    <hr class="mt-0">
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase ">
+                            core
+                        </div>
+                    </li>
+                    <li>
+                        <!-- /link -->
+                        <a href="index.html" class="nav-link active">
+                            <i class="fa-solid fa-gauge me-2"></i>
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <hr class="">
+                    <li>
+                        <div class="text-muted small fw-bold text-uppercase mb-3">
+                            INTERFACE
+                        </div>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="nav-link  d-flex justify-content-center align-items-center" class=" dropdown" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear me-2"></i>
+                            <span>Components</span>
+                            <i class="fa-solid fa-chevron-down ms-auto right-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-2" id="">
+                            <div class="card card-body">
+                                <span class="text-muted text-uppercase fw-bold small mb-2">
+                                    CUSTOM COMPONENTS:
+                                </span>
+                                <li><a class="dropdown-item " href="buttons.html">Buttons</a></li>
+                                <li><a class="dropdown-item active" href="cards.html">Cards</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown mt-3">
+                        <a class="nav-link  d-flex justify-content-center align-items-center" class=" dropdown" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear me-2"></i>
+                            <span>Utilities</span>
+                            <i class="fa-solid fa-chevron-down ms-auto right-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-2" id="">
+                            <div class="card card-body">
+                                <span class="text-muted text-uppercase fw-bold small mb-2">
+                                    Utilities custom:
+                                </span>
+                                <li><a class="dropdown-item" href="colors.html">Colors</a></li>
+                                <li><a class="dropdown-item" href="borders.html">Borders</a></li>
+                                <li><a class="dropdown-item " href="animations.html">Animations</a></li>
+                                <li><a class="dropdown-item" href="other.html">Other</a></li>
+                            </div>
+                        </ul>
+                    </li>
+                    <hr class="">
+
+                    <li class="">
+                        <div class="text-uppercase text-muted fw-bold small">
+                            ADDONS
+                        </div>
+                    </li>
+
+                    <li class="dropdown mt-3">
+                        <a class="nav-link  d-flex justify-content-center align-items-center" class=" dropdown" href="#"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear me-2"></i>
+                            <span>Pages</span>
+                            <i class="fa-solid fa-chevron-down ms-auto right-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu mt-2" id="">
+                            <div class="card card-body">
+                                <span class="text-muted text-uppercase fw-bold small mb-2">
+                                    login screens:
+                                </span>
+                                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                <li><a class="dropdown-item" href="register.html">Register</a></li>
+                                <li><a class="dropdown-item" href="forgot-pass.html">Forgot Password</a></li>
+                                <span class="text-muted text-uppercase fw-bold small my-2">
+                                    other pages:
+                                </span>
+                                <li><a class="dropdown-item" href="404page.html">404 Page</a></li>
+                                <li><a class="dropdown-item" href="b.html">Blank Page</a></li>
+                            </div>
+                        </ul>
+                    </li>
+
+                    <li class="my-3">
+                        <a href="chart.html" class="nav-link">
+                            <i class="fa-solid fa-chart-column me-2"></i>
+                            <span class="">Chart</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="table.html" class="nav-link">
+                            <i class="fa-solid fa-table me-2"></i>
+                            <span class="">Table</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!-- offsanvas end -->
+
+    <main class="pt-4 mt-5 rounded">
+        <div class="container-fluid">
+            <div class="row ">
+                <div class="col-12 fs-3 fw-bold col-md-6  d-flex my-2">
+                   Cards
+                </div>
+                <div class="col-12 col-md-6 d-none d-lg-flex d-md-flex d-sm-flex  d-flex justify-content-end my-2">
+                    <a href="" class="btn fw-bold fs-6 btn-primary btn-lg">
+                        <i class="fa-solid me-2 fa-download"></i>
+                        <span class="">Genarate report</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <!-- card section start -->
+            <div class="row gy-3  my-md-2 mb-5">
+
+
+
+                <div class="col-12 col-lg-6  col-xl-3 col-sm-6 ">
+                    <div
+                        class="card d-flex flex-row border-left-primary justify-content-between align-items-center p-4 rounded shadow ">
+                        <div class="card-text">
+                            <span class="small text-uppercase fw-bold text-primary">EARNINGS (MONTHLY)</span>
+                            <div class=" fw-bold fs-5">$40,000</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fs-3 fa-credit-card"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-6  col-xl-3 col-sm-6 ">
+                    <div
+                        class="card d-flex flex-row border-left-success justify-content-between align-items-center p-4 rounded shadow ">
+                        <div class="card-text">
+                            <span class="small text-uppercase fw-bold text-success">EARNINGS (ANNUAL)</span>
+                            <div class=" fw-bold fs-5">$215,000</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fs-3 fa-sack-dollar"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6  col-xl-3 col-sm-6 ">
+                    <div class="card  border-left-info  p-3 rounded shadow ">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col ">
+                                    <div class="small font-weight-bold  text-info text-uppercase ">Tasks
+                                    </div>
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="col-auto">
+                                            <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="progress progress-sm mr-2">
+                                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%"
+                                                    aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="col-12 col-lg-6  col-xl-3 col-sm-6 ">
+                    <div
+                        class="card d-flex flex-row border-left-warning justify-content-between align-items-center p-4 rounded shadow ">
+                        <div class="card-text">
+                            <span class="small text-uppercase fw-bold text-warning">PENDING REQUESTS</span>
+                            <div class=" fw-bold fs-5">18</div>
+                        </div>
+                        <div class="card-icon">
+                            <i class="fa-solid fs-3 fa-comments-dollar"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- card section end -->
+
+            <!-- card section 2nd start -->
+
+            <div class="row gy-3 mt-3">
+
+                <div class="col-12  col-md-6">
+                    <div class="card">
+                        <h5 class="card-header text-gray-400">Default Card Example</h5>
+                        <div class="card-body">
+                            This card uses Bootstrap's default styling with no utility classes added. Global styles are the only things modifying the look and feel of this default card example.
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12  col-md-6">
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                                Collapsable Card Example
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong>This is a collapsable card example using Bootstrap's built in collapse functionality. Click on the card header to see the card body collapse and expand!
+                            </div>
+                          </div>
+                        </div>                       
+                      </div>
+                </div>
+
+                <div class="col-12  col-md-6">
+                    <div class="card dropdown">
+                        <div class="card-header">
+                        <div class="dropdown d-flex justify-content-between align-items-center" data-bs-toggle="dropdown" aria-expanded="false">
+                            <h5 class=" text-primary ">Dropdown Card Example</h5>
+                            <i class="fa-solid fa-ellipsis-vertical me-3"></i>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
+                        </div>
+
+                          <div class="card-body">
+                            Dropdown menus can be placed in the card header in order to extend the functionality of a basic card. In this dropdown card example, the Font Awesome vertical ellipsis icon in the card header can be clicked on in order to toggle a dropdown menu.
+                        </div>
+                      </div>
+                </div>
+
+                <div class="col-12  col-md-6 col-sm-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="text-primary">Basic Card Example</h5>
+                        </div>
+                        <div class="card-body">
+                            The styling for this basic card example is created by using default Bootstrap utility classes. By using utility classes, the style of the card component can be easily modified with no need for any custom CSS!
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <!-- card section 2nd end -->
+
+        </div>
+    </main>
+
+
+
+    <!-- footer section -->
+    <div class="footer bg-light p-4 small text-muted fw-bold text-center mt-4">
+        <span>This Is A © copyright Website Made By Azizur Rahaman Just for Practice in - 2021</span>
+    </div>
+
+
+    <!-- js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

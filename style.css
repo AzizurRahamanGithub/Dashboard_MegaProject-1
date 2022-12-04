@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: cursive;
+    background-color: rgba(182, 189, 200, 0.771) !important;
+}
+a{
+    text-decoration: none;
+}
+
+:root{
+    --offcanva-width:240px ;
+    --top-nav-height:68px;
+    --bottom-footer-height:68px;
+    --text-small:4px;
+    --border-left-primary:#3B71CA;
+    --border-left-warning:#E4A11B;
+    --border-left-success:#45e284;
+    --border-left-danger:red;
+    --border-left-secondary:rgba(0, 0, 0, 0.482);
+    --border-left-dark:black;
+    --border-left-info:#54B4D3;
+    --chart-bg-color:rgba(27, 26, 26, 0.281);
+    
+}
+
+.sidebar-nav{
+    width: var(--offcanva-width) ;
+}
+@media screen and (min-width:992px) {
+    .sidebar-nav{
+        visibility: visible !important ;
+        transform: none;
+        top: var(--top-nav-height);
+        height: calc(100% - var(--top-nav-height));
+    }
+    main{
+        margin-left: var(--offcanva-width);
+        margin-top: var(--top-nav-height);
+        margin-bottom: var();
+    }
+    .footer{
+        margin-left: var(--offcanva-width);
+    }
+}
+.small{
+    font-size: var(--text-small);
+}
+.nav-link .right-icon{
+    transition: all .3s;
+    
+}
+.nav-link[aria-expanded="true"] .right-icon{
+    transform: rotate(180deg);
+}
+main{
+  
+}
+.border-left-info{
+    border-left: 4px solid var(--border-left-info);
+}
+.border-left-primary{
+    border-left: 4px solid var(--border-left-primary);
+}
+.border-left-warning{
+    border-left: 4px solid var(--border-left-warning);
+}
+.border-left-success{
+    border-left: 4px solid var(--border-left-success);
+}
+.border-left-danger{
+    border-left: 4px solid var(--border-left-danger);
+}
+.border-left-dark{
+    border-left: 4px solid var(--border-left-dark);
+}
+.border-left-secondary{
+    border-left: 4px solid var(--border-left-secondary);
+}
+
+
+.border-bottom-info{
+    border-bottom: 4px solid var(--border-left-info);
+}
+.border-bottom-primary{
+    border-bottom: 4px solid var(--border-left-primary);
+}
+.border-bottom-warning{
+    border-bottom: 4px solid var(--border-left-warning);
+}
+.border-bottom-success{
+    border-bottom: 4px solid var(--border-left-success);
+}
+.border-bottom-danger{
+    border-bottom: 4px solid var(--border-left-danger);
+}
+.border-bottom-dark{
+    border-bottom: 4px solid var(--border-left-dark);
+}
+.border-bottom-secondary{
+    border-bottom: 4px solid var(--border-left-secondary);
+}
+.border-right{
+    border-right: 2px solid rgba(5, 5, 5, 0.545);
+    margin: 0 5px;
+}
+.chart-bg{
+    background-color: var(--chart-bg-color);
+}
+
+#myPieChart{
+    
+    width: 200px;
+    height: 214px;
+    border-radius: 50%;
+    background: conic-gradient( rgb(0, 225, 255) 0% 22%, rgb(19, 148, 19) 0% 57%, rgb(0, 68, 255) 0% 31%);
+}
+
+.text-gray-400{
+    color: rgb(172, 172, 172);
+    
+}
+.btn-circle{
+    border-radius: 50%;
+}
+.animation{
+    transition: all .5s !important;
+}
+
+.rotate-15{
+    transform: rotate(15deg);
+    transition: all .3s;
+}
+.rotate-n-15{
+    transform: rotate(-15deg);
+    transition: all .3s;
+}
+
+.bg-img-1{
+    background-image: url(img/login.webp);
+    background-repeat: no-repeat;
+    background-size:contain;
+    
+}
+.bg-img-2{
+    background-image: url(img/forgot.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bg-img-3{
+    background-image: url(img/registerin.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
